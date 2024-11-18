@@ -4,6 +4,7 @@ import Footer from '../partials/Footer'
 import HomeBanner from './HomeBanner'
 import ItemCards from './ItemCards'
 import WearToWedding from './WearToWedding'
+import VariationCard from './VariationCard'
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <HomeBanner img="banner.jpg" header="TOLUS SPRING COLLECTION" subheader="Find out our best spring collection. Offering our best quality product in a Tolus Spring Collection."/>
       <ItemCards/>
       <WearToWedding img="secondbanner.png" header="WEAR TO WEDDING" subheader="A symphony of exquisite designs tailored for your unforgettable moments" button="See Details"/>
+      <VariationCard/>
       <Footer/>
     </>
   )

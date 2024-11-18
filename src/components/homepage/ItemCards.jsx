@@ -1,5 +1,6 @@
 import React from 'react'
 import NewCollection from './NewCollection'
+import { Link } from 'react-router-dom'
 
 const ItemCards = () => {
     const itemCardsArray = [
@@ -48,14 +49,12 @@ const ItemCards = () => {
                 <h2>NEW COLLECTION</h2>
                 <p className="text-gray-400">Our latest collection, where classic and contemporary styles converge in perfect harmony.</p>
             </div>
-        <div className="grid grid-cols-3 gap-2  w-[1800px]">
+        <div className="grid md:grid-cols-3 gap-2 w-[450px]  md:w-[1800px] mx-auto">
         {itemCardsArray.map((item, key) => (
-            <NewCollection item={item} key={key}/>
+            <Link to="/variation"><NewCollection item={item} key={key}/></Link>
             ))}
         </div>
         </div>
-
- 
     </section>
 
   )

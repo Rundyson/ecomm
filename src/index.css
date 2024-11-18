@@ -43,4 +43,22 @@
   .container {
     @apply max-w-[1800px] mx-auto px-1;
   }
+  .right-footer p{
+    @apply text-gray-600 leading-7;
+  }
+  .toggle-menu span{
+    @apply h-[3px] w-8 block mb-1 transition-all bg-black;
+  }
+  .toggle-menu.active span:first-child{
+    @apply rotate-[45deg] translate-y-3;
+  }
+  .toggle-menu.active span:nth-child(2){
+    @apply opacity-0;
+  }
+  .toggle-menu.active span:last-child{
+    @apply rotate-[-45deg] translate-y-[-2px];
+  }
+  .list li{
+    @apply text-xl font-bold border-b-2 border-black pb-3 md:font-normal md:border-none md:pb-0 md:text-base;
+  }
 }
